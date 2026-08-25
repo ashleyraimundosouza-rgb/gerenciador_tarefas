@@ -1,25 +1,39 @@
-nav{
-
+nav {
+    /* MUDANÇA: Fundo no rosa bem claro e borda inferior sutil */
+    background-color: var(--sakura-claro);
+    border-bottom: 1px solid var(--sakura-medio);
+    width: 100%;
+    padding: 15px 0;
 }
 
-li{
-
-}
-
-ul{
+ul {
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    height: 30px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
     font-size: 18px;
 }
 
-a{
-    color: rgb(255, 184, 231);
+a {
+    /* MUDANÇA: Cor do link no rosa escuro/vinho para melhor leitura */
+    color: var(--sakura-escuro);
+    text-decoration: none;
+    font-weight: 500; /* Deixa o texto levemente mais firme */
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
 }
 
-a:hover{
-    color: rgb(146, 0, 85);
+a:hover {
+    /* MUDANÇA: Ao passar o mouse, a cor muda para o rosa vivo da flor */
+    color: var(--sakura-principal);
+    /* MUDANÇA: A linha de baixo acompanha a nova cor em vez do amarelo */
+    border-bottom-color: var(--sakura-principal);
 }

@@ -1,36 +1,42 @@
-footer{
+footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-items: center;
+    justify-content: space-between; /* Distribui as duas áreas nas pontas */
     width: 100%;
-    height: 150%;
-    background-color: rgb(245, 199, 233);
+    min-height: 100px;
+    
+    /* MUDANÇA: Fundo em rosa suave e borda superior elegante no tom principal */
+    background-color: var(--sakura-claro); 
+    border-top: 3px solid var(--sakura-principal); 
+    
+    /* MUDANÇA: Texto principal no marrom escuro dos galhos para excelente contraste */
+    color: var(--sakura-ramo); 
+    
+    padding: 0 30px; /* Margem interna nas laterais */
+    box-sizing: border-box;
 }
 
-footer .colegio{
-    background-color: rgb(230, 116, 186);
-    width: 50%;
-}
-
-footer .colegio .nomeColegio{
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-footer .desenvolvedor{
-    background-color: rgb(247, 57, 162);
-    width: 50%;
+footer .colegio {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-footer .desenvolvedor .nomeDesenvolvedor{
-     font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
+footer .colegio .nomeColegio {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    /* MUDANÇA: Destaque sutil para o nome do colégio no rosa escuro */
+    color: var(--sakura-escuro); 
+}
+
+footer .desenvolvedor {
+    display: flex;
+    align-items: center;
+}
+
+footer .desenvolvedor .nomeDesenvolvedor {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
 }
