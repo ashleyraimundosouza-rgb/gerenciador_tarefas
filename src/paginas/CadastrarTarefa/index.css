@@ -86,3 +86,17 @@ section p {
 .formulario button[type="submit"]:active {
   transform: scale(0.98);
 }
+
+.error{
+  width: 80%;
+  height: 15px;
+  background-color: #f3d6dde3;
+  border: 1px #ddbfc7e7;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.textoError{
+  color: black;
+  font-weight: 700;
+}

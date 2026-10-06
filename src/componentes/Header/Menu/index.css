@@ -37,3 +37,53 @@ a:hover {
     /* MUDANÇA: A linha de baixo acompanha a nova cor em vez do amarelo */
     border-bottom-color: var(--sakura-principal);
 }
+
+/* Definição das variáveis de cores da Sakura (se você já não as definiu no :root) */
+:root {
+    --sakura-claro: #fdf2f4;       /* Rosa bem claro (fundo do nav) */
+    --sakura-medio: #fbcfe8;       /* Borda inferior sutil */
+    --sakura-escuro: #881337;      /* Rosa escuro/vinho para leitura */
+    --sakura-principal: #ec4899;   /* Rosa vivo da flor para o hover */
+}
+
+/* Estrutura e cores do Container */
+.menu-container {
+    background-color: var(--sakura-claro);
+    border-bottom: 1px solid var(--sakura-medio);
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra bem leve para combinar com o tom claro */
+}
+
+/* Lista do Menu */
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item do Menu */
+.menu-item {
+    font-size: 1rem; /* equivalente a 16px-18px */
+    font-weight: 500;
+}
+
+/* Links do Menu */
+.menu-link {
+    color: var(--sakura-escuro);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efeito Hover nos Links */
+.menu-link:hover {
+    color: var(--sakura-principal);
+    border-bottom-color: var(--sakura-principal);
+}

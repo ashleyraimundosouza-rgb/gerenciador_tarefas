@@ -1,0 +1,97 @@
+/* Paleta de Cores Sakura (Árvore de Cerejeira) */
+:root {
+    --sakura-claro: #FFF0F5;   /* Rosa bem claro/pastel para fundos */
+    --sakura-medio: #FFB7C5;   /* Rosa clássico da flor de Sakura */
+    --sakura-principal: #FF91A4; /* Rosa vivo para destaques */
+    --sakura-escuro: #8B263E;    /* Rosa escuro/vinho para textos e bordas importantes */
+    --sakura-ramo: #4A2828;      /* Marrom escuro dos galhos para contrastar */
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--sakura-escuro);
+}
+
+header h1 {
+    color: var(--sakura-ramo);
+    margin: 0;
+}
+
+section {
+    margin-top: 30px;
+}
+
+/* Estilização para o contador de tarefas */
+section div p {
+    color: var(--sakura-escuro);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+/* Estilização da tabela de tarefas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--sakura-medio);
+}
+
+thead {
+    background-color: var(--sakura-principal);
+}
+
+thead th {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--sakura-claro);
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--sakura-claro);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 183, 197, 0.2);
+}
+
+tbody td {
+    padding: 12px 15px;
+    color: var(--sakura-ramo);
+    font-size: 14px;
+}
+
+/* Estilização do link ou botão "Ver" na tabela */
+tbody td:last-child {
+    color: var(--sakura-escuro);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+tbody td:last-child:hover {
+    text-decoration: underline;
+}

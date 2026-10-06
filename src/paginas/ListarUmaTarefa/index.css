@@ -1,0 +1,99 @@
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #4a3e3d; /* Tom marrom/cinza quente para texto principal */
+}
+
+header {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 2px solid #f2a6b4; /* Rosa sakura suave */
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: #d85d7c; /* Rosa cerejeira vibrante */
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section div {
+  width: 100%;
+}
+
+section div p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #6e5258;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(216, 93, 124, 0.08); /* Sombra suave rosada */
+  border: 1px solid #fce8ec;
+}
+
+thead {
+  background-color: #d85d7c; /* Rosa cerejeira */
+}
+
+th {
+  color: #ffffff;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #fce8ec;
+  font-size: 0.95rem;
+  color: #5c4a4e;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #fff5f7; /* Fundo suave ao passar o mouse */
+}
+
+td:last-child {
+  font-weight: 600;
+  color: #b83b5e; /* Vinho/rosa escuro para ação */
+  cursor: pointer;
+}
+
+td:last-child:hover {
+  text-decoration: underline;
+  color: #d85d7c;
+}
+
+a {
+  color: #b83b5e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d85d7c;
+}
