@@ -1,47 +1,32 @@
-import './index.css'
-import tarefas from '../../mook/tarefas';
-import {Link} from 'react-router-dom';
+import './index.css';
+import { useParams } from 'react-router-dom';
+import tarefas from '../../mook/tarefas'; //ATUALIZAR
 
-function ListarTarefas() {
-    return (
-        <main>
+function ListarUmaTarefa(){
+    const {id} = useParams();
+    /*ATUALIZAR DAS LINHAS ABAIXO*/    
+    const tarefa = tarefas.find((item) => String(item.id) === String(id));
+
+    if (!tarefa) {
+        return <p>Tarefa não encontrada.</p>;
+    }
+
+    const { titulo, responsavel, descricao } = tarefa;
+    
+    return(
+        
+        <section>
             <header>
-                <h1>Tarefas Cadastradas</h1>
+                <h1>Listar Tarefa</h1>
             </header>
-
-            <section>
-                <div>
-                    <p>Foram encontrados {tarefas.length} tarefas.</p>
-                    <Link to={"/cadastrarTarefa"}>+ Tarefa</Link>
-                </div>
-            </section>
-            <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ITEM</th>
-                            <th>TAREFA</th>
-                            <th>RESPONSÁVEL</th>
-                            <th>VER</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            tarefas.map((item) => (
-                                <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td>{item.titulo}</td>
-                                    <td>{item.responsavel}</td>
-                                    <td><Link to={`/tarefa/${item.id}`}>Ver</Link></td>
-                                    
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                </table>
-            </section>
-        </main>
+            <div>
+                <h2>#{id} - {titulo}</h2>
+                <p>Responsável: {responsavel}</p>
+                <p>{descricao}</p>
+            </div>
+        </section>
+        
     )
 }
 
-export default ListarTarefas;
+export default ListarUmaTarefa

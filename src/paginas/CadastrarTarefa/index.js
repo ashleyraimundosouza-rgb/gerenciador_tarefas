@@ -30,7 +30,7 @@ const [error, setError] = useState('');
             'id': tarefas.length + 1,
             'titulo': titulo,
             'descricao': descricao,
-            'responavel': responsavel
+            'responsavel': responsavel
           }
 
           tarefas.push(addTarefa);
