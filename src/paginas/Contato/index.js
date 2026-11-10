@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './index.css';
-import tarefa from '../../mook/tarefas'
-import tarefas from '../../mook/tarefas';
+
 function CadastrarTarefa() {
     const [titulo, setTitulo] = useState('');
     const [descricao, setDescricao] = useState('')
